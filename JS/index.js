@@ -37,4 +37,29 @@ console.log(isEven(8));
 
 // Как обозначаются четные и нечетные я подсмотрел, я хз как это было вспомнить
 
+// Задание 4
 
+function calculate(num1, num2, operator) {
+  if (operator === "+") {
+    return num1 + num2; // делаю сложение
+  } else if (operator === "-") {
+    return num1 - num2; // делаю вычитание
+  } else if (operator === "*") {
+    return num1 * num2; // делаю умножение
+  } else if (operator === "/") {
+    if (num2 === 0) {
+      return "Дурак, на 0 делить нельзя!!!!!!";
+    }
+    return num1 / num2; // делаю деление
+  } else {
+    return "Неизвестное вычисление";
+  }
+}
+
+console.log(calculate(10, 5, "+")); // 15
+console.log(calculate(10, 5, "-")); // 5
+console.log(calculate(10, 5, "*")); // 50
+console.log(calculate(10, 5, "/")); // 2
+console.log(calculate(10, 0, "/")); // по идеи должна выйти ошибка
+
+// делал задания с ИИ, но только с подсказками, сам стараюсь не списывать и больше думать. Но легче конечно скатывать все от и до XD
