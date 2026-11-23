@@ -21,3 +21,20 @@ function calculateDiscount(price, discount) {
 console.log(calculateDiscount(10000, 20));
 
 console.log(calculateDiscount(42500, 33));
+
+// Задание 3
+
+function isEven(number) {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEven(15));
+console.log(isEven(8));
+
+// Как обозначаются четные и нечетные я подсмотрел, я хз как это было вспомнить
+
+
